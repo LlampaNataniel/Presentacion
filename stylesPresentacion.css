@@ -3,6 +3,9 @@ body{
 
 }
  .group-link{
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: inline-block;
     background-color: chartreuse;
     text-align: center;
