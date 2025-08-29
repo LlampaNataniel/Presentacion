@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+
+}
+ .group-link{
+    display: inline-block;
+    background-color: chartreuse;
+    text-align: center;
+    opacity: 0.9;
+    padding: 14px 25px;
+}
+
+a:hover{
+    color:blue;
+    background-color: violet;
+    opacity: 1;
+}
