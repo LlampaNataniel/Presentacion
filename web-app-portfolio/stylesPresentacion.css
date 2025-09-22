@@ -1,0 +1,214 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+}
+
+h1{
+    color : white;
+}
+
+.presentacion{
+    color:white;
+    margin-bottom:5px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    margin-top: 80px;
+    background-color: black;
+}
+
+body div{
+    text-align: center;
+}
+ .group-link{
+    font-style: italic;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+    background-color:black;
+    text-align: center;
+    opacity: 0.9;
+    padding: 14px 25px;
+    color: aqua;
+    font-size: 20px;
+}
+
+a:hover{
+    color:blue;
+    background-color: rgb(141, 243, 250);
+    opacity: 1;
+}
+
+#aboutme, #proyects, #contact, #tecnologias, #acceso{
+    scroll-margin-top: 70px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+
+
+#contact p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+    margin: 10px 0;
+    
+}
+
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgPres img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.title-sub{
+    color: aliceblue;
+    size: 20%;
+}
+
+
+.rowItems{
+  display: flex;              
+  flex-wrap: wrap;             
+  gap: 20px;                   
+  justify-content: center;    
+  padding: 20px;
+}
+
+.rowItems p{
+    display: inline-block;
+    background-color:bisque;
+    padding:  14px 25px;
+    text-align: center;
+    opacity: 0.9;
+    margin-right: 2%;
+}
+
+.proyectsItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: #f1f1f1;  
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;                
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+
+.proyectsItems:hover {
+  transform: translateY(-5px);
+}
+
+.tecnologias-list {
+    list-style: none; 
+    padding: 0;
+    margin-top: 15px; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.tecnologias-list li {
+    background-color: #3498db; 
+    color: white; 
+    padding: 5px 10px;
+    margin: 5px; 
+    border-radius: 5px; 
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+
+/* Boton acceso prop*/
+#open-login-btn {
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#open-login-btn:hover {
+    background-color: #2980b9;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal-hidden {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Asegura que esté por encima de todo */
+}
+
+/* El fondo oscuro */
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* El contenido del formulario */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 100px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    z-index: 1001; /* Debe estar por encima del fondo */
+}
+
+/* El botón para cerrar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
